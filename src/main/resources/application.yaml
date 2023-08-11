@@ -1,0 +1,23 @@
+quarkus:
+  banner:
+    enabled: false
+  micrometer:
+    binder:
+      http-server:
+        ignore-patterns:
+          - '/q.*'
+
+mp:
+  openapi:
+    extensions:
+      smallrye:
+        info:
+          title: osetrm-uti-api API
+          version: 1.0.0
+          description: API for generating universal transaction identifiers (uti)
+          contact:
+            name: osetrm-uti-api API Support
+            url: https://github.com/osetrm/osetrm-uti-api
+          license:
+            name: Apache 2.0
+            url: http://www.apache.org/licenses/LICENSE-2.0.html
